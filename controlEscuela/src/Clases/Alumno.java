@@ -4,7 +4,9 @@ public class Alumno {
     
     private String matricula;
     private String nombre;
-    private int calificacion = 0;
+    private int calificacionExamen = 0;
+    private int calificacionPractica = 0;
+    private int calificacionFinal = 0;
 
     public Alumno(String matricula, String nombre) {
         this.matricula = matricula;
@@ -13,27 +15,45 @@ public class Alumno {
     }
 
     public String getMatricula() {
-        return this.matricula;
+        return matricula;
     }
 
-    public void setMatricula(String valor) {
-        this.matricula = valor;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
     public String getNombre() {
-        return this.nombre;
+        return nombre;
     }
 
-    public void setNombre(String valor) {
-        this.nombre = valor;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getCalificacionExamen() {
+        return calificacionExamen;
+    }
+
+    public void setCalificacionExamen(int calificacionExamen) {
+        this.calificacionExamen = calificacionExamen;
+    }
+
+    public int getCalificacionPractica() {
+        return calificacionPractica;
+    }
+
+    public void setCalificacionPractica(int calificacionPractica) {
+        this.calificacionPractica = calificacionPractica;
     }
 
     public int getCalificacionFinal() {
-        return this.calificacion;
+        return calificacionFinal;
     }
 
-    public void setCalificacion(int valor) {
-        this.calificacion = valor;
+    public void setCalificacionFinal(int calificacionFinal) {
+        this.calificacionFinal = calificacionFinal;
     }
+
+    
   
 }
